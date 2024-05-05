@@ -1,5 +1,5 @@
 import { MouseClass } from "../../mouse.class";
-import { Point } from "@nut-tree/shared";
+import { Point } from "@nut-tree-fork/shared";
 
 export const toBeAt = async (received: MouseClass, position: Point) => {
   const currentPosition = await received.getPosition();

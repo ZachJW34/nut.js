@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/default-clipboard-provider",
+  "name": "@nut-tree-fork/default-clipboard-provider",
   "version": "4.2.0",
   "description": "The @nut-tree/nut-js default clipboard provider based on clipboardy",
   "main": "dist/index",
@@ -10,7 +10,7 @@
     "test": "jest --runInBand",
     "clean": "rimraf dist",
     "compile": "pnpm run clean && tsc -p .",
-    "publish:next": "pnpm publish --tag next --no-git-checks",
+    "publish:next": "pnpm publish --tag next --no-git-checks --access public",
     "publish:release": "pnpm publish --no-git-checks",
     "prepublishOnly": "pnpm run compile"
   },
@@ -30,10 +30,7 @@
     "clipboardy": "2.3.0"
   },
   "devDependencies": {
-    "@nut-tree/provider-interfaces": "workspace:*",
-    "@nut-tree/configs": "workspace:*"
-  },
-  "peerDependencies": {
-    "@nut-tree/nut-js": "^3"
+    "@nut-tree-fork/provider-interfaces": "workspace:*",
+    "@nut-tree-fork/configs": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-import { Point } from "@nut-tree/shared";
+import { Point } from "@nut-tree-fork/shared";
 import { Bresenham } from "./bresenham.class";
 
 describe("Bresenham", () => {

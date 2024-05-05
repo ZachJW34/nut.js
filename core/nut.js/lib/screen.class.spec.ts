@@ -11,7 +11,7 @@ import {
   RGBA,
   TextQuery,
   WindowQuery
-} from "@nut-tree/shared";
+} from "@nut-tree-fork/shared";
 import { ScreenClass } from "./screen.class";
 import { mockPartial } from "sneer";
 import {
@@ -24,7 +24,7 @@ import {
   ScreenProviderInterface,
   TextFinderInterface,
   WindowFinderInterface
-} from "@nut-tree/provider-interfaces";
+} from "@nut-tree-fork/provider-interfaces";
 import { NoopLogProvider } from "./provider/log/noop-log-provider.class";
 
 const searchRegion = new Region(0, 0, 1000, 1000);

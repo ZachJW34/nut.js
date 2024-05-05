@@ -1,6 +1,6 @@
 import {libnut} from "../import_libnut";
-import {ColorMode, Image, Region} from "@nut-tree/shared";
-import {ScreenProviderInterface} from "@nut-tree/provider-interfaces";
+import {ColorMode, Image, Region} from "@nut-tree-fork/shared";
+import {ScreenProviderInterface} from "@nut-tree-fork/provider-interfaces";
 import {Bitmap} from "../libnut";
 
 export default class ScreenAction implements ScreenProviderInterface {

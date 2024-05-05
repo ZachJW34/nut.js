@@ -1,5 +1,5 @@
 import {libnut} from "../import_libnut";
-import {Button, Point} from "@nut-tree/shared";
+import {Button, Point} from "@nut-tree-fork/shared";
 import MouseAction from "./libnut-mouse.class";
 
 jest.mock("../import_libnut");

@@ -1,4 +1,4 @@
-import { Image, Point, RGBA } from "@nut-tree/shared";
+import { Image, Point, RGBA } from "@nut-tree-fork/shared";
 
 /**
  * An ImageProcessor should provide an abstraction layer to perform

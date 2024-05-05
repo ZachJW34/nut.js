@@ -1,4 +1,4 @@
-import { Image } from "@nut-tree/shared";
+import { Image } from "@nut-tree-fork/shared";
 import { DataSinkInterface } from "./data-sink.interface";
 
 export interface ImageWriterParameters {

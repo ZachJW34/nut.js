@@ -1,4 +1,4 @@
-import { Point, Region, Size } from "@nut-tree/shared";
+import { Point, Region, Size } from "@nut-tree-fork/shared";
 
 /**
  * A WindowActionProvider should provide access to a system's window system

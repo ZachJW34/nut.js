@@ -13,8 +13,8 @@ import {
   Region,
   RegionResultFindInput,
   TextQuery
-} from "@nut-tree/shared";
-import { ProviderRegistry } from "@nut-tree/provider-interfaces";
+} from "@nut-tree-fork/shared";
+import { ProviderRegistry } from "@nut-tree-fork/provider-interfaces";
 
 export function isRegionResultFindInput(
   input: RegionResultFindInput | PointResultFindInput

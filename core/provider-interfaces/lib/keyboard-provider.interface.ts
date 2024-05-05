@@ -1,4 +1,4 @@
-import { Key } from "@nut-tree/shared";
+import { Key } from "@nut-tree-fork/shared";
 
 /**
  * A KeyboardActionProvider should provide access to a systems keyboard

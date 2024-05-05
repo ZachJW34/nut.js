@@ -1,5 +1,5 @@
 import { AssertClass } from "./assert.class";
-import { Region } from "@nut-tree/shared";
+import { Region } from "@nut-tree-fork/shared";
 import { ScreenClass } from "./screen.class";
 import providerRegistry from "./provider/provider-registry.class";
 import { Image } from "../index";

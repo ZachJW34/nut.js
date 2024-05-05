@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/shared",
+  "name": "@nut-tree-fork/shared",
   "version": "4.2.0",
   "description": "Shared objects, data types and functions for @nut-tree/nut-js",
   "main": "dist/index",
@@ -10,7 +10,7 @@
     "coverage:clean": "rimraf coverage",
     "clean": "rimraf dist",
     "compile": "pnpm run clean && tsc -p .",
-    "publish:next": "pnpm publish --tag next --no-git-checks",
+    "publish:next": "pnpm publish --tag next --no-git-checks --access public",
     "publish:release": "pnpm publish --no-git-checks",
     "prepublishOnly": "pnpm run compile",
     "typedoc": "typedoc --out docs"
@@ -20,7 +20,7 @@
     "jimp": "0.22.10"
   },
   "devDependencies": {
-    "@nut-tree/configs": "workspace:*"
+    "@nut-tree-fork/configs": "workspace:*"
   },
   "keywords": [
     "nut-js"

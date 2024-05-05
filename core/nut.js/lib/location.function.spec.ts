@@ -1,5 +1,5 @@
 import { centerOf, randomPointIn } from "./location.function";
-import { Point, Region } from "@nut-tree/shared";
+import { Point, Region } from "@nut-tree-fork/shared";
 
 describe("Location", () => {
   describe("centerOf", () => {

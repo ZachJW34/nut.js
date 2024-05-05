@@ -1,5 +1,5 @@
 import { MouseClass } from "../../mouse.class";
-import { Region } from "@nut-tree/shared";
+import { Region } from "@nut-tree-fork/shared";
 
 export const toBeIn = async (received: MouseClass, region: Region) => {
   const currentPosition = await received.getPosition();

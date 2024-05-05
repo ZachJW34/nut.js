@@ -1,4 +1,4 @@
-import { WindowQuery } from "@nut-tree/shared";
+import { WindowQuery } from "@nut-tree-fork/shared";
 
 /**
  * A WindowFinder should provide an abstraction layer to perform window searches

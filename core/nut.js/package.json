@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/nut-js",
+  "name": "@nut-tree-fork/nut-js",
   "version": "4.2.0",
   "license": "Apache-2.0",
   "main": "dist/index",
@@ -51,21 +51,21 @@
     "test": "jest --runInBand",
     "coverage": "jest --coverage --runInBand --logHeapUsage",
     "coverage:clean": "rimraf coverage",
-    "publish:next": "pnpm publish --tag next --no-git-checks",
+    "publish:next": "pnpm publish --tag next --no-git-checks --access public",
     "publish:release": "pnpm publish --no-git-checks",
     "prepublishOnly": "pnpm run compile",
     "typedoc": "typedoc --out docs"
   },
   "dependencies": {
-    "@nut-tree/default-clipboard-provider": "workspace:*",
-    "@nut-tree/libnut": "workspace:*",
-    "@nut-tree/shared": "workspace:*",
-    "@nut-tree/provider-interfaces": "workspace:*",
+    "@nut-tree-fork/default-clipboard-provider": "workspace:*",
+    "@nut-tree-fork/libnut": "workspace:*",
+    "@nut-tree-fork/shared": "workspace:*",
+    "@nut-tree-fork/provider-interfaces": "workspace:*",
     "jimp": "0.22.10",
     "node-abort-controller": "3.1.1"
   },
   "devDependencies": {
-    "@nut-tree/configs": "workspace:*"
+    "@nut-tree-fork/configs": "workspace:*"
   },
   "engines": {
     "node": ">=16"

@@ -1,7 +1,7 @@
-import { Key } from "@nut-tree/shared";
+import { Key } from "@nut-tree-fork/shared";
 import { KeyboardClass } from "./keyboard.class";
 import { mockPartial } from "sneer";
-import { KeyboardProviderInterface, LogProviderInterface, ProviderRegistry } from "@nut-tree/provider-interfaces";
+import { KeyboardProviderInterface, LogProviderInterface, ProviderRegistry } from "@nut-tree-fork/provider-interfaces";
 import { NoopLogProvider } from "./provider/log/noop-log-provider.class";
 
 jest.setTimeout(10000);

@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/provider-interfaces",
+  "name": "@nut-tree-fork/provider-interfaces",
   "version": "4.2.0",
   "description": "Public provider interfaces for @nut-tree/nut-js",
   "main": "dist/index",
@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "compile": "pnpm run clean && tsc -p .",
-    "publish:next": "pnpm publish --tag next --no-git-checks",
+    "publish:next": "pnpm publish --tag next --no-git-checks --access public",
     "publish:release": "pnpm publish --no-git-checks",
     "prepublishOnly": "pnpm run compile",
     "typedoc": "typedoc --out docs"
@@ -23,9 +23,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@nut-tree/shared": "workspace:*"
+    "@nut-tree-fork/shared": "workspace:*"
   },
   "devDependencies": {
-    "@nut-tree/configs": "workspace:*"
+    "@nut-tree-fork/configs": "workspace:*"
   }
 }

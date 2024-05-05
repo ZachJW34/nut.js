@@ -1,8 +1,8 @@
 import { join, normalize } from "path";
 import { URL } from "url";
-import { ColorMode, Image } from "@nut-tree/shared";
+import { ColorMode, Image } from "@nut-tree-fork/shared";
 import Jimp from "jimp";
-import { ProviderRegistry } from "@nut-tree/provider-interfaces";
+import { ProviderRegistry } from "@nut-tree-fork/provider-interfaces";
 
 export function loadImageResource(
   providerRegistry: ProviderRegistry,

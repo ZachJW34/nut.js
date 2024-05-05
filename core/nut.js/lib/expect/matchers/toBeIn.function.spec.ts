@@ -1,5 +1,5 @@
 import { mouse } from "../../../index";
-import { Point, Region } from "@nut-tree/shared";
+import { Point, Region } from "@nut-tree-fork/shared";
 import { toBeIn } from "./toBeIn.function";
 
 const targetPoint = new Point(400, 400);

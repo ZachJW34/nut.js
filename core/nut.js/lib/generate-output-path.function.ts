@@ -1,6 +1,6 @@
 import { join, parse } from "path";
 import { cwd } from "process";
-import { FileType } from "@nut-tree/shared";
+import { FileType } from "@nut-tree-fork/shared";
 
 /**
  * {@link generateOutputPath} is used to assemble full file path from a filename and various parameters

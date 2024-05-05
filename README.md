@@ -147,13 +147,13 @@ const {
   centerOf,
   Button,
   getActiveWindow,
-} = require("@nut-tree/nut-js");
+} = require("@nut-tree-fork/nut-js");
 const {
   preloadLanguages,
   Language,
   LanguageModelType,
   configure,
-} = require("@nut-tree/plugin-ocr");
+} = require("@nut-tree-fork/plugin-ocr");
 
 configure({ languageModelType: LanguageModelType.BEST });
 
@@ -169,7 +169,7 @@ function activeWindowRegion() {
 (async () => {
   await preloadLanguages([Language.English], [LanguageModelType.BEST]);
   await sleep(5000);
-  const result = await screen.find(singleWord("@nut-tree/nut-js"));
+  const result = await screen.find(singleWord("@nut-tree-fork/nut-js"));
   await mouse.move(straightTo(centerOf(result)));
   await mouse.click(Button.LEFT);
   await screen.waitFor(singleWord("Native"), 15000, 1000, {

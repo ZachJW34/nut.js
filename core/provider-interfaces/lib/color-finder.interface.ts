@@ -1,4 +1,4 @@
-import { ColorQuery, MatchRequest, MatchResult, Point } from "@nut-tree/shared";
+import { ColorQuery, MatchRequest, MatchResult, Point } from "@nut-tree-fork/shared";
 
 /**
  * A WindowFinder should provide an abstraction layer to perform window searches

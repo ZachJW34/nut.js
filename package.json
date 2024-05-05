@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/monorepo",
+  "name": "@nut-tree-fork/monorepo",
   "version": "4.2.0",
   "private": true,
   "scripts": {
@@ -16,9 +16,7 @@
   "packageManager": "pnpm@8.15.2",
   "workspaces": [
     "core/*",
-    "providers/*",
-    "examples/*",
-    "e2e/*"
+    "providers/*"
   ],
   "devDependencies": {
     "@types/jest": "29.5.12",

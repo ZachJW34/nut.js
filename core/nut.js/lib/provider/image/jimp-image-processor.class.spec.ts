@@ -1,4 +1,4 @@
-import { Image, Point } from "@nut-tree/shared";
+import { Image, Point } from "@nut-tree-fork/shared";
 import JimpImageProcessor from "./jimp-image-processor.class";
 
 const imageWidth = 10;

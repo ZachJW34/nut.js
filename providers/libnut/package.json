@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/libnut",
+  "name": "@nut-tree-fork/libnut",
   "version": "4.2.0",
   "description": "libnut is an N-API module for desktop automation with node",
   "main": "dist/index",
@@ -33,7 +33,7 @@
     "test": "jest --runInBand",
     "coverage": "jest --coverage --runInBand",
     "coverage:clean": "rimraf coverage",
-    "publish:next": "pnpm publish --tag next --no-git-checks",
+    "publish:next": "pnpm publish --tag next --no-git-checks --access public",
     "publish:release": "pnpm publish --no-git-checks",
     "prepublishOnly": "pnpm run compile",
     "version": "npm version --no-git-tag -f"
@@ -42,16 +42,13 @@
     "node": ">=10.15.3"
   },
   "dependencies": {
-    "@nut-tree/libnut-darwin": "2.7.1",
-    "@nut-tree/libnut-linux": "2.7.1",
-    "@nut-tree/libnut-win32": "2.7.1"
+    "@nut-tree-fork/libnut-darwin": "2.7.1",
+    "@nut-tree-fork/libnut-linux": "2.7.1",
+    "@nut-tree-fork/libnut-win32": "2.7.1"
   },
   "devDependencies": {
-    "@nut-tree/configs": "workspace:*",
-    "@nut-tree/shared": "workspace:*",
-    "@nut-tree/provider-interfaces": "workspace:*"
-  },
-  "peerDependencies": {
-    "@nut-tree/nut-js": "^3"
+    "@nut-tree-fork/configs": "workspace:*",
+    "@nut-tree-fork/shared": "workspace:*",
+    "@nut-tree-fork/provider-interfaces": "workspace:*"
   }
 }

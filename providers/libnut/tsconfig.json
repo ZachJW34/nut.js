@@ -1,5 +1,5 @@
 {
-  "extends": "@nut-tree/configs/tsconfig/base.json",
+  "extends": "@nut-tree-fork/configs/tsconfig/base.json",
   "compilerOptions": {
     "outDir": "./dist"
   },

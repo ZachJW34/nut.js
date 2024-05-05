@@ -1,5 +1,5 @@
 import { mouse } from "../../../index";
-import { Point } from "@nut-tree/shared";
+import { Point } from "@nut-tree-fork/shared";
 import { toBeAt } from "./toBeAt.function";
 
 const targetPoint = new Point(100, 100);

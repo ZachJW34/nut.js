@@ -1,5 +1,5 @@
 {
-  "name": "@nut-tree/configs",
+  "name": "@nut-tree-fork/configs",
   "private": true,
   "version": "4.2.0",
   "description": "Shared configs for nut.js",

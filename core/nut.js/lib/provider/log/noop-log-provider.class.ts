@@ -1,4 +1,4 @@
-import { LogProviderInterface } from "@nut-tree/provider-interfaces";
+import { LogProviderInterface } from "@nut-tree-fork/provider-interfaces";
 
 export class NoopLogProvider implements LogProviderInterface {
   public trace(_: string, __?: {}) {

@@ -1,5 +1,5 @@
 import { ScreenClass } from "../../screen.class";
-import { FindInput, isRegion, OptionalSearchParameters, Region } from "@nut-tree/shared";
+import { FindInput, isRegion, OptionalSearchParameters, Region } from "@nut-tree-fork/shared";
 import { screen } from "../../../index";
 
 export const toShow = async <PROVIDER_DATA>(

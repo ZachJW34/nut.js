@@ -1,4 +1,4 @@
-import { Image, Region, TextQuery } from "@nut-tree/shared";
+import { Image, Region, TextQuery } from "@nut-tree-fork/shared";
 import {
   createMatchRequest,
   getMatchResult,
@@ -12,7 +12,7 @@ import {
   LogProviderInterface,
   ProviderRegistry,
   TextFinderInterface
-} from "@nut-tree/provider-interfaces";
+} from "@nut-tree-fork/provider-interfaces";
 import { NoopLogProvider } from "./provider/log/noop-log-provider.class";
 
 beforeEach(() => {

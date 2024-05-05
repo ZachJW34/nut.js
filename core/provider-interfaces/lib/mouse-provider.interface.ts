@@ -1,4 +1,4 @@
-import { Button, Point } from "@nut-tree/shared";
+import { Button, Point } from "@nut-tree-fork/shared";
 
 /**
  * A MouseActionProvider should provide access to a systems mouse input

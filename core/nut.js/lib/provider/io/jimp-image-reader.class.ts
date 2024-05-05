@@ -1,6 +1,6 @@
 import Jimp from "jimp";
-import { ImageReader } from "@nut-tree/provider-interfaces";
-import { ColorMode, Image } from "@nut-tree/shared";
+import { ImageReader } from "@nut-tree-fork/provider-interfaces";
+import { ColorMode, Image } from "@nut-tree-fork/shared";
 
 export default class implements ImageReader {
   load(parameters: string): Promise<Image> {
