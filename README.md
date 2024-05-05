@@ -1,7 +1,7 @@
 # nut.js (Native UI Toolkit)
 
 |         |                                                 GitHub Actions                                                 |
-|:-------:|:--------------------------------------------------------------------------------------------------------------:|
+| :-----: | :------------------------------------------------------------------------------------------------------------: |
 | Master  |   ![Create tagged release](https://github.com/nut-tree/nut.js/workflows/Create%20tagged%20release/badge.svg)   |
 | Develop | ![Create snapshot release](https://github.com/nut-tree/nut.js/workflows/Create%20snapshot%20release/badge.svg) |
 
@@ -112,9 +112,9 @@ It's work in progress and will undergo constant modification.
 - [x] Retrieve RGBA color information on screen
 - [x] Highlighting screen regions
 - [x] Find a single or multiple occurrences of an image on screen (requires an additional provider package like
-  e.g. [nut-tree/template-matcher](https://www.npmjs.com/package/@nut-tree/template-matcher))
+      e.g. [nut-tree/template-matcher](https://www.npmjs.com/package/@nut-tree-fork/template-matcher))
 - [x] Wait for an image to appear on screen (requires an additional provider package like
-  e.g. [nut-tree/template-matcher](https://www.npmjs.com/package/@nut-tree/template-matcher))
+      e.g. [nut-tree/template-matcher](https://www.npmjs.com/package/@nut-tree-fork/template-matcher))
 - [x] Find a single or multiple occurrences of text on screen (\*)
 - [x] Wait for a piece of text to appear on screen (\*)
 - [x] Find a single or multiple windows on screen (\*)
@@ -267,10 +267,10 @@ The core functionality of `nut.js` is open source and available on GitHub.
 
 To build nut.js from source you'll have to build native dependencies first.
 
-- Start with [@nut-tree/libnut-core](https://github.com/nut-tree/libnut-core)
-    - A build pipeline can be found in the respective repository
+- Start with [@nut-tree-fork/libnut-core](https://github.com/nut-tree/libnut-core)
+  - A build pipeline can be found in the respective repository
 - Update dependencies in `nut.js` to point to your local build of `libnut-core`
-    - A build pipeline can be found in the respective repository
+  - A build pipeline can be found in the respective repository
 
 ### Pre-built packages
 
@@ -284,13 +284,13 @@ package, [check out the registry access tutorial for reference](https://nutjs.de
 With everything set up, running
 
 ```bash
-npm i @nut-tree/nut-js
+npm i @nut-tree-fork/nut-js
 ```
 
 or
 
 ```bash
-yarn add @nut-tree/nut-js
+yarn add @nut-tree-fork/nut-js
 ```
 
 will install `nut.js` and its required dependencies.
@@ -302,13 +302,13 @@ will install `nut.js` and its required dependencies.
 Running
 
 ```bash
-npm i @nut-tree/nut-js@next
+npm i @nut-tree-fork/nut-js@next
 ```
 
 or
 
 ```bash
-yarn add @nut-tree/nut-js@next
+yarn add @nut-tree-fork/nut-js@next
 ```
 
 will install the most recent development release of `nut.js`.
