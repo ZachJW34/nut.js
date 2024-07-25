@@ -111,14 +111,14 @@ importers:
   providers/libnut:
     dependencies:
       '@nut-tree-fork/libnut-darwin':
-        specifier: 2.7.2
-        version: 2.7.2
+        specifier: 2.7.3
+        version: 2.7.3
       '@nut-tree-fork/libnut-linux':
-        specifier: 2.7.2
-        version: 2.7.2
+        specifier: 2.7.3
+        version: 2.7.3
       '@nut-tree-fork/libnut-win32':
-        specifier: 2.7.2
-        version: 2.7.2
+        specifier: 2.7.3
+        version: 2.7.3
     devDependencies:
       '@nut-tree-fork/configs':
         specifier: workspace:*
@@ -1101,8 +1101,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@nut-tree-fork/libnut-darwin@2.7.2:
-    resolution: {integrity: sha512-Y4Kt/fn/Rn/T/HHcgxlRCvZkVMWkY0YyVCVUWzOGUULLvdEq9w2+2vNgW2kml5LOUz/HKUGkyVFtxxswi0OgYg==}
+  /@nut-tree-fork/libnut-darwin@2.7.3:
+    resolution: {integrity: sha512-9Cigcyl1285uJtQ3srt2eJQB6+yF16Bu/BN6szmP7GG/K3JZeNOR5g2SYzS0jPuFUe1uY6MMuW5m+HSps4R3RQ==}
     engines: {node: '>=10.15.3'}
     cpu: [x64, arm64]
     os: [darwin, linux, win32]
@@ -1112,8 +1112,8 @@ packages:
       '@nut-tree-fork/node-mac-permissions': 2.2.1
     dev: false
 
-  /@nut-tree-fork/libnut-linux@2.7.2:
-    resolution: {integrity: sha512-f5j8EcsBrG5vOdbySu55QiOFGRWqt+td9XQsIWKI4G1JVb2sXIjL5RI/gOW1t1LugmImMRnItayMv7VsscdNwQ==}
+  /@nut-tree-fork/libnut-linux@2.7.3:
+    resolution: {integrity: sha512-6Sb5CVee+Av+8JtHOmn0+xlS8czivSt/ZVGttErondobBLTbrUZcVg/OEcxTMGWq5tM4hIYYsYlqEOSj3hapQw==}
     engines: {node: '>=10.15.3'}
     cpu: [x64, arm64]
     os: [darwin, linux, win32]
@@ -1123,8 +1123,8 @@ packages:
       '@nut-tree-fork/node-mac-permissions': 2.2.1
     dev: false
 
-  /@nut-tree-fork/libnut-win32@2.7.2:
-    resolution: {integrity: sha512-6jOqUehE/5HvQXMtxPjazKOTPm2CKIF9XJpq5aMk2qyFhqeps+7TJ1765qvshCGFM63Rzr31nkPlvXKBx9/mhg==}
+  /@nut-tree-fork/libnut-win32@2.7.3:
+    resolution: {integrity: sha512-3HDHgX6IuZ8vYJYocvYQiHrsiAFInVl6ad7/I7Woy43on67UGVX0jrCPxUqzNqcAcnPga0oJJ7Ktjjj9jqb3Dg==}
     engines: {node: '>=10.15.3'}
     cpu: [x64, arm64]
     os: [darwin, linux, win32]

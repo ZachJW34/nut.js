@@ -1,6 +1,6 @@
 {
   "name": "@nut-tree-fork/shared",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Shared objects, data types and functions for @nut-tree-fork/nut-js",
   "main": "dist/index",
   "typings": "dist/index",

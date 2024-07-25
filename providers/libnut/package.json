@@ -1,6 +1,6 @@
 {
   "name": "@nut-tree-fork/libnut",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "libnut is an N-API module for desktop automation with node",
   "main": "dist/index",
   "typings": "dist/index",
@@ -42,9 +42,9 @@
     "node": ">=10.15.3"
   },
   "dependencies": {
-    "@nut-tree-fork/libnut-darwin": "2.7.2",
-    "@nut-tree-fork/libnut-linux": "2.7.2",
-    "@nut-tree-fork/libnut-win32": "2.7.2"
+    "@nut-tree-fork/libnut-darwin": "2.7.3",
+    "@nut-tree-fork/libnut-linux": "2.7.3",
+    "@nut-tree-fork/libnut-win32": "2.7.3"
   },
   "devDependencies": {
     "@nut-tree-fork/configs": "workspace:*",
