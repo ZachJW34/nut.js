@@ -178,6 +178,7 @@ export enum Key {
   NumPadEqual = "numpad_equal",
 
   Enter = "enter",
+  Clear = "clear",
   Add = "add",
   Subtract = "subtract",
   Multiply = "multiply",
