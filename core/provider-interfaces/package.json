@@ -1,6 +1,6 @@
 {
   "name": "@nut-tree-fork/provider-interfaces",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "description": "Public provider interfaces for @nut-tree-fork/nut-js",
   "main": "dist/index",
   "typings": "dist/index",

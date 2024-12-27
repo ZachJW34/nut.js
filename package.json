@@ -1,6 +1,6 @@
 {
   "name": "@nut-tree-fork/monorepo",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "private": true,
   "scripts": {
     "test": "pnpm -r test",
