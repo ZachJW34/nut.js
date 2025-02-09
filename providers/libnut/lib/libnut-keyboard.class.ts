@@ -89,6 +89,8 @@ export default class KeyboardAction implements KeyboardProviderInterface {
     [Key.RightWin, "right_win"],
     [Key.LeftCmd, "cmd"],
     [Key.RightCmd, "right_cmd"],
+    [Key.LeftMeta, "meta"],
+    [Key.RightMeta, "right_meta"],
 
     [Key.Menu, "menu"],
     [Key.Fn, "fn"],
