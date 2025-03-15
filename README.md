@@ -1,15 +1,5 @@
 # nut.js (Native UI Toolkit)
 
-|         |                                                 GitHub Actions                                                 |
-| :-----: | :------------------------------------------------------------------------------------------------------------: |
-| Master  |   ![Create tagged release](https://github.com/nut-tree/nut.js/workflows/Create%20tagged%20release/badge.svg)   |
-| Develop | ![Create snapshot release](https://github.com/nut-tree/nut.js/workflows/Create%20snapshot%20release/badge.svg) |
-
-[![SonarCloud badge](https://sonarcloud.io/api/project_badges/measure?project=nut-tree%3Anut.js&metric=alert_status)](https://sonarcloud.io/dashboard?id=nut-tree%3Anut.js)
-[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=nut-tree%3Anut.js&metric=coverage)](https://sonarcloud.io/component_measures?id=nut-tree%3Anut.js&metric=coverage)
-
-<a href="https://console.dev" title="Visit Console - the best tools for developers"><img src="https://console.dev/img/badges/1.0/svg/console-badge-logo-dark.svg" alt="Console - Developer Tool of the Week" /></a>
-
 <p align="center">
 Please visit
 </p>
@@ -17,11 +7,6 @@ Please visit
 <p align="center">
 for detailed documentation and tutorials
 </p>
-
-<p align="center">
-Most importantly,
-</p>
-<h1 align="center"><a href="https://nutjs.dev/blog/i-give-up">please read this</a></h1>
 
 <br/>
 
@@ -35,21 +20,6 @@ Most importantly,
 
 It allows for native UI interactions via keyboard and / or mouse,
 but additionally gives you the possibility to navigate the screen based on image matching.
-
-# The Price of Open Source
-
-If you came here after I removed public packages from npm as announced
-in ['the blog post'](https://nutjs.dev/blog/i-give-up), please be aware that
-
-- nut.js is still open source (you are right here, aren't you?)
-- nut.js is still free to use, you'll just have to build it from sources
-- nut.js is still maintained and developed further
-- nut.js does not force anyone to pay anything, because you can even build every single plugin yourself. It's just
-  interfaces to implement
-
-`nut.js` is developed with community in mind.
-
-A huge **"Thank you!"** goes out to all sponsors who make open source a bit more sustainable!
 
 # Demo
 
@@ -261,28 +231,6 @@ On e.g. Ubuntu you can switch to XWayland on your login screen as a workaround.
 
 ## Install `nut.js`
 
-### Open Source
-
-The core functionality of `nut.js` is open source and available on GitHub.
-
-To build nut.js from source you'll have to build native dependencies first.
-
-- Start with [@nut-tree-fork/libnut-core](https://github.com/nut-tree/libnut-core)
-  - A build pipeline can be found in the respective repository
-- Update dependencies in `nut.js` to point to your local build of `libnut-core`
-  - A build pipeline can be found in the respective repository
-
-### Pre-built packages
-
-Pre-built packages are available for subscription plans.
-
-Check out the [pricing page](https://nutjs.dev/pricing/pricing) for more information.
-
-Once you subscribed to a plan, you'll receive a token which you can use to install the respective
-package, [check out the registry access tutorial for reference](https://nutjs.dev/tutorials/registry-access).
-
-With everything set up, running
-
 ```bash
 npm i @nut-tree-fork/nut-js
 ```
@@ -295,25 +243,20 @@ yarn add @nut-tree-fork/nut-js
 
 will install `nut.js` and its required dependencies.
 
-### Snapshot releases
+## Release
 
-`nut.js` also provides snapshot releases which allows to test upcoming features.
+To get your changes in a new release of `@nut-tree-fork/nut-js` you must:
 
-Running
-
-```bash
-npm i @nut-tree-fork/nut-js@next
-```
-
-or
-
-```bash
-yarn add @nut-tree-fork/nut-js@next
-```
-
-will install the most recent development release of `nut.js`.
-
-**Attention**: While snapshot releases are great to work with upcoming features before a new stable release, it is still
-a snapshot release.
-Please bear in mind that things might change and / or break on snapshot releases, so it is not recommended using them in
-production.
+- [libnut-core](https://github.com/ZachJW34/libnut-core) (Only required if changed)
+  - Merge any required PRs for libnut-core
+  - Create a version bump (increment packageJson.version) commit, create a corresponding git tag, push commit and tag to origin
+  - CI will publish new versions for windows,mac and linux
+  - Once published, bump all versions of [@nut-tree-fork/libnut-[darwin/linux/win32]](https://github.com/ZachJW34/nut.js/blob/733bf7d9e62522343e9c2625e3abff2078f49b77/providers/libnut/package.json#L45) in nut.js repo
+  - Create Github release based on pushed git tag for libunt-core
+- nut.js
+  - Bump all versions of child packages (root, core/configs, core/nut.js, core/provider-interfaces, core/shared, providers/clipboardy, providers/libnut). I keep them in lockstep.
+  - Run `pnpm i` (will pull in `libnut-core` changes if made)
+  - Run `pnpm run compile` to verify all packages build
+  - Create a corresponding git tag, create and push commit and tag to origin
+  - Run `pnpm run publish:release --otp=...`, replace with 2 factor auth code for npm publishing.
+  - Create Github release based on pushed git tag for nut.js
